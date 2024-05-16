@@ -1,0 +1,12 @@
+<div>
+    <div #Parent *ngFor="let User of Notifications" class="card">
+     <p>
+        {{User.text}}
+     </p>
+     <div>{{User?.date|date:'longDate'}}</div>
+     <br>
+     <button class="btn MainButton" (click)="DeleteNotification(Parent,User)">
+      Delete
+      </button>
+    </div>
+</div>

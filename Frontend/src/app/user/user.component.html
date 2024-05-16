@@ -1,0 +1,43 @@
+<div class="row justify-content-center" style="height: 90vh; width: 100%;">
+    <div class="d-flex flex-column p-3" class="sideMenu">
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li (click)="changeInfrence(0,$event)" class="navItemactive">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                Details
+          </li>
+          <li (click)="changeInfrence(1,$event)" class="navItem">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                Services
+          </li >
+          <li (click)="changeInfrence(2,$event)" class="navItem">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+              User requests
+          </li>
+          <li (click)="changeInfrence(3,$event)" class="navItem">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+              Requests
+          </li>
+          <li (click)="changeInfrence(4,$event)" class="navItem">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Notifications
+          </li>
+          <li (click)="changeInfrence(5,$event)" class="navItem">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              BookMarks
+          </li>
+        </ul>
+    </div>
+    <button class="btn btn-danger sideMenuButton" (click)="Expanded()">Expand</button>
+    <h1 *ngIf="!userService.IsLoggedIn()">
+        Please Log in to view your profile
+    </h1>
+    <h3 *ngIf="!UserDetails">Loading</h3>
+    <div *ngIf="UserDetails" style="overflow: auto; height: 100%; width: 90%;">
+      <app-userDetail       *ngIf="x==0" [UserDetails]="UserDetails" ></app-userDetail>
+      <app-user-services    *ngIf="x==1" [userServices]="UserDetails.services"></app-user-services>
+      <app-user-requests    *ngIf="x==2" [userRequests]="UserDetails.userRequests"></app-user-requests>
+      <app-user-services-requests *ngIf="x==3" [userRequests]="UserDetails.providerRequests"></app-user-services-requests>
+      <app-notifications    *ngIf="x==4" [Notifications]="UserDetails.notifications"></app-notifications>
+      <app-bookmark *ngIf="x==5" [Bookmarks]="UserDetails.bookmarks"></app-bookmark>
+    </div>
+</div>

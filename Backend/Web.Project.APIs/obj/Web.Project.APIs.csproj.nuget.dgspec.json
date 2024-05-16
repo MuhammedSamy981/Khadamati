@@ -1,0 +1,216 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\ITI\\Khadamati\\Backend\\Web.Project.APIs\\Web.Project.APIs.csproj": {}
+  },
+  "projects": {
+    "F:\\ITI\\Khadamati\\Backend\\Web.Project.APIs\\Web.Project.APIs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\ITI\\Khadamati\\Backend\\Web.Project.APIs\\Web.Project.APIs.csproj",
+        "projectName": "Web.Project.APIs",
+        "projectPath": "F:\\ITI\\Khadamati\\Backend\\Web.Project.APIs\\Web.Project.APIs.csproj",
+        "packagesPath": "C:\\Users\\20127\\.nuget\\packages\\",
+        "outputPath": "F:\\ITI\\Khadamati\\Backend\\Web.Project.APIs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20127\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\ITI\\Khadamati\\Backend\\Web.Project.BL\\Web.Project.BL.csproj": {
+                "projectPath": "F:\\ITI\\Khadamati\\Backend\\Web.Project.BL\\Web.Project.BL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "microsoft.aspnetcore.authentication.jwtbearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "microsoft.identitymodel.tokens": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\ITI\\Khadamati\\Backend\\Web.Project.BL\\Web.Project.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\ITI\\Khadamati\\Backend\\Web.Project.BL\\Web.Project.BL.csproj",
+        "projectName": "Web.Project.BL",
+        "projectPath": "F:\\ITI\\Khadamati\\Backend\\Web.Project.BL\\Web.Project.BL.csproj",
+        "packagesPath": "C:\\Users\\20127\\.nuget\\packages\\",
+        "outputPath": "F:\\ITI\\Khadamati\\Backend\\Web.Project.BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20127\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\ITI\\Khadamati\\Backend\\Web.Project.DAL\\Web.Project.DAL.csproj": {
+                "projectPath": "F:\\ITI\\Khadamati\\Backend\\Web.Project.DAL\\Web.Project.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\ITI\\Khadamati\\Backend\\Web.Project.DAL\\Web.Project.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\ITI\\Khadamati\\Backend\\Web.Project.DAL\\Web.Project.DAL.csproj",
+        "projectName": "Web.Project.DAL",
+        "projectPath": "F:\\ITI\\Khadamati\\Backend\\Web.Project.DAL\\Web.Project.DAL.csproj",
+        "packagesPath": "C:\\Users\\20127\\.nuget\\packages\\",
+        "outputPath": "F:\\ITI\\Khadamati\\Backend\\Web.Project.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20127\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "microsoft.aspnetcore.identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

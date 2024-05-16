@@ -1,0 +1,32 @@
+<p *ngIf="!services">Loading....</p>
+
+
+<table class="text-center container table table-striped">
+<caption class="caption-top">
+   <a class="btn btn-primary"
+   [routerLink]="'/service/add'"
+   >Add New Service</a>
+</caption>
+ <thead *ngIf="services">
+    <th>Name</th>  
+    <th>Category</th>
+    <th>Price</th>
+    <th>Status</th>
+    <th>Date</th>
+ </thead>
+ <tbody *ngIf="services">
+    <tr *ngFor="let service of services">
+      <td>{{service.name}}</td>
+      <td>{{service.categoryName}}</td>
+      <td>{{service.price}} EGP</td>
+      <td *ngIf="!service.approved">wating for approval</td>
+      <td *ngIf="service.approved">approved</td>
+      <td>{{service.date | date : "medium"}}</td>
+      <td>
+      <a class="btn btn-info me-md-4" [routerLink]="'/service/'+service.id">Details</a>
+      <a class="btn btn-success me-md-4" [routerLink]="'/service/edit/'+service.id">Edit</a>
+      <a class="btn btn-danger" [routerLink]="'/service/delete/'+service.id">Delete</a>
+   </td>
+    </tr>
+ </tbody>
+</table>

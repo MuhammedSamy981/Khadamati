@@ -1,0 +1,53 @@
+.navItem{
+    border-radius:5px;
+    border-width: 0px;
+    background-color: #e8eaea;
+}
+.navItem:hover{
+    background-color: #bababa;
+}
+.navItemactive{
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: aliceblue;
+}
+.sideMenu{
+    padding: 5px;
+    background-color:#e8eaea; 
+    position: fixed;
+    width: 200px;
+    left: -200px;
+    transition: left 1s ease;
+    z-index: 100;
+}
+.sideMenuExpanded{
+    padding: 5px;
+    background-color:#e8eaea; 
+    position: fixed; 
+    width: 200px;
+    left: 0px;
+    transition: left 1s ease;
+    z-index: 100;
+}
+.sideMenuButton{
+    background-color: #dc354693;
+    top: 190px;
+    width: fit-content;
+    height:40px;
+    position: fixed; 
+    left: 10px;
+    transition: left 1s ease;
+    z-index: 100;
+    border-width: 0px;
+}
+.sideMenuButtonExpanded{
+    background-color: #dc354693;
+    top: 190px;
+    width: fit-content;
+    height:40px;
+    position: fixed; 
+    left: 210px;
+    transition: left 1s ease;
+    z-index: 100;
+    border-width: 0px;
+}

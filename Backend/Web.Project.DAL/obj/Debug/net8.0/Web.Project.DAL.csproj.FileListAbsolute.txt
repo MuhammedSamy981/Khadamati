@@ -1,0 +1,12 @@
+F:\ITI\Khadamati\Backend\Web.Project.DAL\obj\Debug\net8.0\Web.Project.DAL.csproj.AssemblyReference.cache
+F:\ITI\Khadamati\Backend\Web.Project.DAL\obj\Debug\net8.0\Web.Project.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\ITI\Khadamati\Backend\Web.Project.DAL\obj\Debug\net8.0\Web.Project.DAL.AssemblyInfoInputs.cache
+F:\ITI\Khadamati\Backend\Web.Project.DAL\obj\Debug\net8.0\Web.Project.DAL.AssemblyInfo.cs
+F:\ITI\Khadamati\Backend\Web.Project.DAL\obj\Debug\net8.0\Web.Project.DAL.csproj.CoreCompileInputs.cache
+F:\ITI\Khadamati\Backend\Web.Project.DAL\bin\Debug\net8.0\Web.Project.DAL.deps.json
+F:\ITI\Khadamati\Backend\Web.Project.DAL\bin\Debug\net8.0\Web.Project.DAL.dll
+F:\ITI\Khadamati\Backend\Web.Project.DAL\bin\Debug\net8.0\Web.Project.DAL.pdb
+F:\ITI\Khadamati\Backend\Web.Project.DAL\obj\Debug\net8.0\Web.Project.DAL.dll
+F:\ITI\Khadamati\Backend\Web.Project.DAL\obj\Debug\net8.0\refint\Web.Project.DAL.dll
+F:\ITI\Khadamati\Backend\Web.Project.DAL\obj\Debug\net8.0\Web.Project.DAL.pdb
+F:\ITI\Khadamati\Backend\Web.Project.DAL\obj\Debug\net8.0\ref\Web.Project.DAL.dll
