@@ -1,0 +1,51 @@
+<h1 *ngIf="!services"> loading .....</h1>
+
+
+<section *ngIf="services" class="bg-light mt-5">
+    <div class="container py-5">
+
+      <div class="col-lg-6 text-center container p-3">
+        <form class="d-flex" role="search">
+          <select class="form-select me-2" #location>
+            <option>-Select-</option>
+            <option >Alexandria</option>
+            <option >Cairo</option>
+          </select>
+          <select class="form-select me-2" #category>
+            <option>-Select-</option>
+            <option>course</option>
+            <option>service</option>
+          </select>
+          <button class="btn btn-outline-danger" type="button" (click)="search(location.value,category.value)">search</button>  
+        </form>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center mb-5"
+         *ngFor="let service of paginatedServices">
+          <div class="card" style="width: 600px;">
+            <img [src]="service.pictures![0].url" style="height: 410px;"
+             class="card-img-top" alt="Service Image">
+            <div class="card-body">
+              <h5 class="card-title">{{service.name}}</h5>
+              <p class="card-text">{{service.price}} EGP</p>
+              <p><app-star-rating [rating]="service.rating"></app-star-rating></p>
+              <p class="card-text">{{service.ratings!.length}} Clients</p>
+              <a [routerLink]="'/service/'+service.id" class="btn btn-danger">More Details</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <app-paginator *ngIf="services"
+[sizeOfPage]="sizeOfPage"
+[data]="services"
+(sendedData)="GetData($event)"></app-paginator>
+    
+    </div>
+</section>
+
+
+

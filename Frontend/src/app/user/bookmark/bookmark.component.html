@@ -1,0 +1,6 @@
+<div #e *ngFor="let b of Bookmarks" class="card" (click)="Details(b.serviceId)">
+    <div class="d-flex justify-content-between " >
+        <div  class="col-2 Names" >{{b.serviceName}}</div>
+         <button class="btn MainButton col-2" (click)="DeleteBookmark(b.serviceId,e)">Remove Bookmark</button>
+    </div> 
+</div>

@@ -1,0 +1,15 @@
+F:\ITI\Khadamati\Backend\Web.Project.BL\obj\Debug\net8.0\Web.Project.BL.csproj.AssemblyReference.cache
+F:\ITI\Khadamati\Backend\Web.Project.BL\obj\Debug\net8.0\Web.Project.BL.GeneratedMSBuildEditorConfig.editorconfig
+F:\ITI\Khadamati\Backend\Web.Project.BL\obj\Debug\net8.0\Web.Project.BL.AssemblyInfoInputs.cache
+F:\ITI\Khadamati\Backend\Web.Project.BL\obj\Debug\net8.0\Web.Project.BL.AssemblyInfo.cs
+F:\ITI\Khadamati\Backend\Web.Project.BL\obj\Debug\net8.0\Web.Project.BL.csproj.CoreCompileInputs.cache
+F:\ITI\Khadamati\Backend\Web.Project.BL\bin\Debug\net8.0\Web.Project.BL.deps.json
+F:\ITI\Khadamati\Backend\Web.Project.BL\bin\Debug\net8.0\Web.Project.BL.dll
+F:\ITI\Khadamati\Backend\Web.Project.BL\bin\Debug\net8.0\Web.Project.BL.pdb
+F:\ITI\Khadamati\Backend\Web.Project.BL\bin\Debug\net8.0\Web.Project.DAL.dll
+F:\ITI\Khadamati\Backend\Web.Project.BL\bin\Debug\net8.0\Web.Project.DAL.pdb
+F:\ITI\Khadamati\Backend\Web.Project.BL\obj\Debug\net8.0\Web.Project.BL.csproj.CopyComplete
+F:\ITI\Khadamati\Backend\Web.Project.BL\obj\Debug\net8.0\Web.Project.BL.dll
+F:\ITI\Khadamati\Backend\Web.Project.BL\obj\Debug\net8.0\refint\Web.Project.BL.dll
+F:\ITI\Khadamati\Backend\Web.Project.BL\obj\Debug\net8.0\Web.Project.BL.pdb
+F:\ITI\Khadamati\Backend\Web.Project.BL\obj\Debug\net8.0\ref\Web.Project.BL.dll

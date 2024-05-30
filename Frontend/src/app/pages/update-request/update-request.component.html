@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="status d-flex justify-content-between">
+                <div class="serviceName">{{data?.serviceDetails?.name}}</div>
+                <div class="status">{{data?.status}}</div>
+            </div>
+        </div>
+        <div class="col-12 request-text my-4">
+            <p>{{data?.requestText}}</p>
+            <input [(ngModel)]="requestText" type="text" class="form-control" placeholder="requestText" aria-label="requestText" aria-describedby="addon-wrapping">
+        </div>
+        <div class="col-12 d-flex justify-content-between gap-3 align-items-center">
+            <div class="input-group flex-nowrap">
+                <input [(ngModel)]="id" type="text" class="form-control" placeholder="Id" aria-label="ID" aria-describedby="addon-wrapping">
+                <button (click)="request()" class="btn btn-danger">Request</button>
+                <button (click)="updateRequest(requestText)" class="btn btn-danger">Update</button>
+              </div>
+                
+        </div>
+    </div>
+
+</div>

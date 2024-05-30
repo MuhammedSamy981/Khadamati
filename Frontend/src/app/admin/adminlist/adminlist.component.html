@@ -1,0 +1,18 @@
+<table class="text-center container table table-striped">
+  <thead>
+      <tr>
+          <th>UserName</th>
+          <th>Phone</th>
+          <th>Email</th>
+        </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let admin of Admins">
+          <td>{{admin.userName}}</td>
+          <td>{{admin.phone}}</td>
+          <td>{{admin.email}}</td>
+          <td><button class="btn btn-danger me-md-4" (click)="DeleteUser(admin.id)">Delete</button></td>
+        </tr>
+  </tbody> 
+</table>
+

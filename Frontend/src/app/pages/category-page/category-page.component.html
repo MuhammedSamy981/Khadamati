@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="col-12 d-flex justify-content-between gap-3 align-items-center">
+        <div class="input-group flex-nowrap">
+            <input [(ngModel)]="Name" type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="addon-wrapping">      
+            <button  (click)="addCategory()" class="btn btn-danger">Add</button>
+          </div>
+          
+    </div>
+
+    <div class="col-12 d-flex justify-content-between mt-3 align-items-center">
+        <select class="form-select w-75   d-inline-block" [(ngModel)]="selectedItem">
+            <option *ngFor="let i of data" [value]="i.id">{{i.name}}</option>
+        </select>
+        <button class="btn btn-danger" (click)="delete(selectedItem)">Delete</button>
+
+    </div>
+    
+</div>

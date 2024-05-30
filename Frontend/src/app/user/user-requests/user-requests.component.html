@@ -1,0 +1,18 @@
+<div>
+    <div #Parent *ngFor="let User of userRequests" class="card">
+        <div class="d-flex justify-content-start">
+            <div class="align-self-end " style="width: fit-content; font-size: 30px; padding-right: 10px; vertical-align: bottom; line-height: 30px;">{{User?.serviceName}}</div>        
+            <div class="align-self-end status{{User.status}}" >{{User?.status}}</div>
+        </div>
+        <textarea #input>{{User?.requestText}}</textarea>
+        <div>{{User?.date|date:'longDate'}}</div>
+        <button (click)="updateRequest(input,User.id)" class="btn MainButton">
+                Update Request
+        </button>
+        <br>
+        <button class="btn MainButton" (click)="DeleteRequest(Parent,User)">
+            Delete
+        </button>
+    </div>
+</div>
+

@@ -1,0 +1,89 @@
+<h1 *ngIf="!service"> loading .....</h1>
+
+<div *ngIf="service" class="container">
+  <div class="Pictures_Slider row">
+    <div class="col-lg-9 col-sm-12 pb-3">
+        <igx-carousel #carousel style="height: 500px;">
+            <igx-slide *ngFor="let picture of service.pictures">
+                <div class="image-container">
+                    <img [src]="picture.url">
+                </div>
+            </igx-slide>
+        </igx-carousel>
+    </div>     
+                    
+           
+    <div class="card col-lg-3 pt-lg-0" style="height: 350px;"> 
+       <div class="card-body">
+           <h5 class="card-title">{{service.name}}</h5>
+           <p class="card-text">Price : {{service.price}} EGP</p>
+           <p class="card-text">Location : {{service.location}}</p>
+           <p class="card-text">Provider : {{service.providerName}}</p>
+           <p class="card-text">Phone : {{service.providerPhone}}</p>
+         </div>
+   </div>
+  </div>
+   
+  <div class="Description col-12 container p-3">
+     <h4>Description </h4>
+     <p class="details"> {{service.description}} </p>
+  </div>
+
+  <button (click)="AddBookmark()" class="MainButton">
+    Bookmark
+  </button>
+
+  <h4>Submit Request</h4>
+  <app-add-request
+    [hidden]="service.providerId == clientId"
+    [serviceId]="service.id"
+    [providerId]="service.providerId"
+  ></app-add-request>
+
+  <section class="Rating_Section" style="background-color: #eee;">
+      <div class="container my-5 py-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12 col-lg-10 col-xl-8">
+            <div class="card">
+              
+    
+              <div class="Rating_Comment_Lists card-body p-4" *ngFor="let rating of service.ratings">
+                <div [hidden]="rating.userId==clientId && deletingStatus">
+                <hr/>
+                <div class="d-flex flex-start">
+    
+                  <div>
+                    <h6 class="fw-bold mb-1">
+                      {{rating.userName}}
+                    </h6>
+                    <span class="text-muted small mb-0">
+                      {{rating.date  | date : "medium"}}
+                     </span>
+
+                     <span class="text-muted small mb-0">
+                      <app-star-rating [rating]="rating.rating"></app-star-rating>
+                    </span>
+                    
+                    <p class="mb-0">
+                      {{rating.comment}}
+                    </p>
+                  </div>
+                </div>
+                <div class="float-end mt-2 pt-1">
+                  <button [hidden]="rating.userId!=clientId" class="btn btn-primary" (click)="deleteRating()">Remove</button>
+                </div>
+              </div>
+              </div>
+    
+              <app-rating-service [serviceId]="service.id" [userId]=clientId
+              [checkUserId]="(clientId==service.providerId)||clientId==undefined" [ratingId]="ratingId"></app-rating-service>
+
+            </div>
+           </div>
+        </div>
+      </div>
+  </section>
+
+</div>
+
+
